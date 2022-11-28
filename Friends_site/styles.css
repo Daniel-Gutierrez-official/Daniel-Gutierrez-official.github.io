@@ -1,0 +1,49 @@
+body{
+    background-color: black;
+    text-align: center;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+
+#eddieBtn{
+ background-image: url(/HTML/Friends_site/Eddie/images/eddie.png); 
+ background-color: black;
+ border:none;
+ border-radius: 30px;
+}
+
+#eddieImg{
+    width: 200px;
+    background-color: none;
+    border-radius: 30px;
+}
+
+#eddieBtn:hover{
+    opacity: .9;
+    cursor: pointer;
+}
+
+
+#santiBtn{
+    background-image: url(/HTML/Friends_site/Santi/images/santi.png); 
+    background-color: black;
+    border:none;
+    border-radius: 30px;
+    padding-left: 20px;
+   }
+   
+   #santiImg{
+       width: 200px;
+       background-color: none;
+       border-radius: 30px;
+   }
+   
+   #santiBtn:hover{
+       opacity: .9;
+       cursor: pointer;
+   }
+   
