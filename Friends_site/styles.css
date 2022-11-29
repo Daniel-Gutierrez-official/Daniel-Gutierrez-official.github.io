@@ -77,11 +77,11 @@ h1{
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Page_pictures/group.png");
 
   /* Set a specific height */
-  height: 65%;
+  height: 50%;
 
   /* Position and center the image to scale nicely on all screens */
   background-position:top left;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   position: relative;
 }
