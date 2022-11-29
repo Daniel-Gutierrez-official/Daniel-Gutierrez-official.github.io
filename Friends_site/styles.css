@@ -46,4 +46,23 @@ h1{
        opacity: .9;
        cursor: pointer;
    }
+
    
+   #keighBtn{
+    background-image: url(/HTML/Friends_site/Keigh/images/keigh.png); 
+    background-color: black;
+    border:none;
+    border-radius: 30px;
+    padding-left: 20px;
+   }
+   
+   #keighImg{
+       width: 200px;
+       background-color: none;
+       border-radius: 30px;
+   }
+   
+   #keighBtn:hover{
+       opacity: .9;
+       cursor: pointer;
+   }
