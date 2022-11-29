@@ -80,8 +80,8 @@ h1{
   height: 50%;
 
   /* Position and center the image to scale nicely on all screens */
-  background-position:top left;
+  background-position:center top;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:cover;
   position: relative;
 }
