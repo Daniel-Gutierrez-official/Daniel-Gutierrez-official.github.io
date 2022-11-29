@@ -82,6 +82,6 @@ h1{
   /* Position and center the image to scale nicely on all screens */
   background-position:top left;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   position: relative;
 }
