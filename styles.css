@@ -1,22 +1,40 @@
+@font-face {
+    font-family: Marker Felt;
+    src: url(//fonts.googleapis.com/css?family=Permanent+Marker);
+  }
+
 body{
-    background-color:#5c842acf;
+    background-color:rgb(108,112,85);
     text-align: center;
 }
 
 h1{
-    color:white;
+    color:rgb(247, 223, 177);
+    font-family: Marker Felt;
+    font-size: 45px;
+    letter-spacing: 5px;
     text-align: center;
+    line-height: 20px;
+}
+
+hr{
+    height: 2px;
+    background-color:rgb(247, 223, 177);
+    border: none;
+
 }
 
 p{
-    color: white;
+    color: rgb(247, 223, 177);;
 }
 
 .button {
-    background-color: #1c87c9;
+    background-color: rgb(154,132,77);
     border: none;
     border-radius: 10px;
-    color: white;
+    font-family: Marker Felt;
+    letter-spacing: 3px;
+    color: rgb(247, 223, 177);
     padding: 20px 34px;
     text-align: center;
     text-decoration: none;
