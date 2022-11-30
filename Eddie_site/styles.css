@@ -1,6 +1,5 @@
 body{
-    background-color:#5c842acf;
-
+    background-color:black;
     text-align: center;
 }
 
@@ -14,12 +13,12 @@ p{
 }
 
 .button {
-    background-color: #1c87c9;
+    background-color: grey;
     border: none;
     border-radius: 10px;
     color: white;
     padding: 20px 34px;
-    text-align: center;
+    align-items: center;
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
@@ -27,7 +26,6 @@ p{
     cursor: pointer;
   }
 
-  .button:hover{
-    opacity: .7;
-    box-shadow: 30px;
-  }
+.button:hover{
+opacity: .8;
+}
