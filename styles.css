@@ -1,7 +1,14 @@
+#Profile{
+  height: 100px;
+  position: flex;
+  
+}
+
+
 @font-face {
     font-family: Marker Felt;
     src: url(//fonts.googleapis.com/css?family=Permanent+Marker);
-  }
+}
 
 body{
     background-color:rgb(108,112,85);
