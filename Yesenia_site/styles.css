@@ -1,10 +1,12 @@
 body{
+    background-color:rgba(0, 0, 0, .99);
     height: 100%;
     margin: 0px;
     padding:0px;
 }
 
 #left-nav{
+    color: white;
     position: -webkit-sticky;
     position: sticky;
     top:0px;
@@ -19,7 +21,7 @@ margin: 5px;
 /*Makes circle*/
 width: 25px;
 height: 25px;
-border: 1px solid rgb(0,0,0);
+border: 1px solid rgb(255, 255, 255);
 border-radius: 50%;
 
 /*Controls J*/
@@ -43,9 +45,15 @@ width:fit-content;
 height: fit-content;
 }
 
+#profile{
+    height: 90%;
+    border: none;
+    background:none;
+}
 
-#block1{
-    display: block;
-    background-color: aqua;
-    height: 400px;
+.picRight{
+    position: absolute;
+    right: -20px;
+    bottom: 0px;
+    margin-left: 20px;
 }
