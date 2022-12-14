@@ -1,40 +1,51 @@
+body{
+    height: 100%;
+    margin: 0px;
+    padding:0px;
+}
+
 #left-nav{
     position: -webkit-sticky;
     position: sticky;
-    position: top left;
-    background-color: rgb(200, 200, 200);
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
+    top:0px;
     width: fit-content;
+    display: flex;
+    
+    font-family: Arial, Helvetica, sans-serif;
 }
-
 
 #logo{    
-    margin: 5px;
-    /*Makes circle*/
-    width: 20px;
-    height: 20px;
-    border: 2px solid rgb(0,0,0);
-    border-radius: 50%;
+margin: 5px;
+/*Makes circle*/
+width: 25px;
+height: 25px;
+border: 1px solid rgb(0,0,0);
+border-radius: 50%;
 
-    /*Controls J*/
-    font-size: small;
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    
+/*Controls J*/
+font-size: small;
+font-family: Arial, Helvetica, sans-serif;
+display: flex;
+align-items: center;
+justify-content: center;
 }
+
 #name{
-    font-size: small;
-    width: fit-content;
-    height:fit-content;
-}
+margin-top: 5px;
+font-size: small;
+width: fit-content;
+height:fit-content;
+}  
 
 #title{
-    font-size:x-small;
-    width:fit-content;
-    height: fit-content;
-    
+font-size:x-small;
+width:fit-content;
+height: fit-content;
+}
+
+
+#block1{
+    display: block;
+    background-color: aqua;
+    height: 400px;
 }

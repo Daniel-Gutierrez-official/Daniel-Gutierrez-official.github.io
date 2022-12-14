@@ -1,9 +1,24 @@
-#Profile{
-  height: 100px;
-  position: flex;
-  
+
+
+h1{
+    color:rgb(247, 223, 177);
+    margin: 0px;
+    font-family: Marker Felt;
+    font-size: 45px;
+    letter-spacing: 5px;
 }
 
+hr{
+    height: 2px;
+    background-color:rgb(247, 223, 177);
+    border: none;
+}
+
+#Profile{
+    width: 75px;
+    border-radius: 50%;
+    margin-bottom: 0px;
+}
 
 @font-face {
     font-family: Marker Felt;
@@ -13,22 +28,6 @@
 body{
     background-color:rgb(108,112,85);
     text-align: center;
-}
-
-h1{
-    color:rgb(247, 223, 177);
-    font-family: Marker Felt;
-    font-size: 45px;
-    letter-spacing: 5px;
-    text-align: center;
-    line-height: 20px;
-}
-
-hr{
-    height: 2px;
-    background-color:rgb(247, 223, 177);
-    border: none;
-
 }
 
 p{
@@ -54,4 +53,5 @@ p{
   .button:hover{
     opacity: .7;
     box-shadow: 30px;
+
   }
