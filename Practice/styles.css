@@ -1,5 +1,8 @@
+
+
 body{
-    height: 100%;
+    background-color: black;
+    min-height: 100vh;
     margin: 0px;
     padding: 0px;
 }
@@ -12,9 +15,6 @@ body{
     display: flex;
     top: 0px;
     width: fit-content;
-    
-    
-
 }
 
 #logo_picture{
@@ -54,9 +54,26 @@ body{
 
 .block1{
     width: cover;
-    height:100px;
-    background-color: black;
-    color: white;
+    height:100vh;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+}
+
+.block2{
+    width: cover;
+    height:100vh;
+    background-color: rgb(152, 100, 100);
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+}
+.block3{
+    width: cover;
+    height:100vh;
+    background-color: rgb(209, 93, 93);
+    color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
 }
