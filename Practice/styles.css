@@ -5,12 +5,15 @@ body{
     min-height: 100%;
 }
 
+.block{
+    background-color:aqua;
+}
+
 .block1{
     background-color: black;
     height:50vh;
     color: rgb(255, 255, 255);
     position: relative;
-
 }
 
 #logo{
@@ -97,16 +100,25 @@ body{
     border-color: rgb(255, 255, 255);
     background-position: center;
     background-size: 250%;
+    text-decoration: none;
+ 
 }
+
+.block1_btns{
+    background-color: aqua;
+}
+
 
 .btn:hover{
     border-color: rgb(198, 156, 102);
 }
 
 .btn_missions{
-    background-image: url(Media/Ethiopia.jpeg);  
+    background-image: url(Media/Ethiopia.jpeg);
     left: 55%;
 }
+
+
 .btn_faith{
     background-image: url(Media/cross.jpeg); 
     left: 69%;
