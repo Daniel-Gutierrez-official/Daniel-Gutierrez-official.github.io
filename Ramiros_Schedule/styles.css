@@ -1,11 +1,11 @@
 body {
-    background-color: white;
-    display: flex;
+background-color: rgb(230, 203, 166);
 }
 
 table,th,td {
     border: 1px solid#000;
-    text-align: center;
+
+  
 }
 
 th{
@@ -17,22 +17,38 @@ th{
 }
 
 #printBtn {
+    background-color: rgb(228, 198, 255);
+    font-family: marker felt;
+    font-size: large;
+    border-color: white;
     border-radius: 10px;
     letter-spacing: 3px;
-    padding: 10px;
+    padding: 15px 20px;
     text-align: center;
-    text-decoration: none;
-    margin: 4px 2px;
+    margin-top: 10px;
     cursor: pointer;
   }
 
-#table1 {
+#tables{
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+#schedule{
     border-collapse: collapse;
 }
 
-#menulist {
-    display:none;
+#hours{
     cursor: pointer;
+    width: px;
+}
+
+#picture{
+    height: 30vh;
+    margin-left: 10px;
+    border: 5px solid darkolivegreen;
+    border-radius: 25px;
 }
 
 @media print{
@@ -42,7 +58,7 @@ th{
 
     #table1, #table1 *{
         visibility: visible;
-
+        font-family: 'Times New Roman', Times, serif;
     }
 
     #table1{
