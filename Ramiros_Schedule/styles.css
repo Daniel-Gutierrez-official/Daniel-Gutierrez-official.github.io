@@ -61,6 +61,7 @@ th{
 @media print{
     body * {
         visibility: hidden;
+        background-color: white;
     }
 
     #schedule, #schedule *{
@@ -69,7 +70,7 @@ th{
         background-color: white;
     }
 
-    #tables{
+    #schedule{
         background-color: white;
         position: absolute;
         left: 0;
