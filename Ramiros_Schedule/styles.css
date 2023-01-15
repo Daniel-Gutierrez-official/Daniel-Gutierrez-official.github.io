@@ -1,0 +1,52 @@
+body {
+    background-color: white;
+    display: flex;
+}
+
+table,th,td {
+    border: 1px solid#000;
+    text-align: center;
+}
+
+th{
+   padding-right: 15px;
+}
+
+.name {
+    text-align: left;
+}
+
+#printBtn {
+    border-radius: 10px;
+    letter-spacing: 3px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+#table1 {
+    border-collapse: collapse;
+}
+
+#menulist {
+    display:none;
+    cursor: pointer;
+}
+
+@media print{
+    body * {
+        visibility: hidden;
+    }
+
+    #table1, #table1 *{
+        visibility: visible;
+
+    }
+
+    #table1{
+        position: absolute;
+        left: 0;
+    }
+}

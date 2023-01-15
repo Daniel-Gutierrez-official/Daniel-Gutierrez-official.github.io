@@ -125,9 +125,7 @@ body{
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 
-    position: absolute;
-    top: 276px;
-    left: 150px;
+    position: relative;
     width: fit-content;
     height: px;
 
