@@ -70,6 +70,7 @@ th{
     }
 
     #schedule{
+        background-color: white;
         position: absolute;
         left: 0;
     }
