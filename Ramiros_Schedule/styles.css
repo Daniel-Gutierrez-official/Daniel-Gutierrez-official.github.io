@@ -68,11 +68,18 @@ th{
         visibility: visible;
         font-family: 'Times New Roman', Times, serif;
         background-color: white;
+        margin: 0px;
+    
     }
 
     #schedule{
         background-color: white;
         position: absolute;
-        left: 0;
+        top: 1px;
+        left: 1px;
+    }
+
+    #tables{
+        background-color: white;
     }
 }
