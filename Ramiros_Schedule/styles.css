@@ -7,7 +7,8 @@ table,th,td {
 }
 
 th{
-   padding-right: 15px;
+   padding-right: 8px;
+   padding-left: 8px;
 }
 
 .name {
@@ -42,6 +43,14 @@ th{
     width: px;
 }
 
+#off{
+    padding: 0 30px;
+}
+
+#bar{
+    padding: 0 15px;
+}
+
 #picture{
     height: 30vh;
     margin-left: 10px;
@@ -54,12 +63,12 @@ th{
         visibility: hidden;
     }
 
-    #table1, #table1 *{
+    #schedule, #schedule *{
         visibility: visible;
         font-family: 'Times New Roman', Times, serif;
     }
 
-    #table1{
+    #schedule{
         position: absolute;
         left: 0;
     }

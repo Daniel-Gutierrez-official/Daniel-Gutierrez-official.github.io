@@ -10,11 +10,9 @@ for (var i = 0; i < firstTableCells.length; ++i) {
         actionCell = evt.srcElement;
         lTableCells = lTable.getElementsByTagName("td");
         for (var x = 0; x < lTableCells.length; ++x) {
-            lTableCells[x].addEventListener
-                ("click", function () {
-                    actionCell.innerHTML = this.innerHTML;
-                }
-                )
+            lTableCells[x].addEventListener("click", function () {
+                actionCell.innerHTML = this.innerHTML;
+            })
         }
     })
 }
