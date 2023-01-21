@@ -5,6 +5,7 @@ body{
 
 h1{
     text-align: center;
+    font-size: 30px;
 }
 
 
@@ -32,6 +33,23 @@ h1{
     clear: both;
   }
 
+  /* The hero image */
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("https://static.wixstatic.com/media/b5c1bb_f2188e8ae7f3437aae0d17bc63a78310~mv2.png/v1/fill/w_608,h_342,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/fw_logo-removebg-preview.png");
+  
+    /* Set a specific height */
+    height: 500px;
+  
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+  }
+
 #logo{
 background-color: white;
 width: fit-content;
@@ -43,5 +61,4 @@ top: 0;
 
 #logoImage{
     width: 8vw;
-    
 }
