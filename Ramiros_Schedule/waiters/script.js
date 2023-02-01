@@ -4,7 +4,6 @@ var lTable = document.getElementById("hours");
 var lTableCells = null;
 var actionCell = null;
 
-
 for (var i = 0; i < firstTableCells.length; ++i) {
     firstTableCells[i].addEventListener("click", function (evt) {
         actionCell = evt.srcElement;
