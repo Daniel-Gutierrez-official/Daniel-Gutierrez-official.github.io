@@ -1,153 +1,18 @@
-
 body{
-    background-color: black;
-    margin: 0;
-    padding: 0;
-    min-height: 100%;
+display: flex;
+justify-content: center;
 }
 
-.block1{
-    background-color: rgb(0, 0, 0);
-    height:50vh;
-    color: rgb(255, 255, 255);
-    position: relative;
+#box1{
+background-color: blue;
+width: 5em;
+height: 5em;
+margin: 1em;
 }
 
-#logo{
-    color: rgb(198, 156, 102);
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    display: flex;
-    top: 0px;
-    width: fit-content;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#logo_picture{
-    align-self: center;
-    width: 25px;
-    height: 25px;
-    border: 1px solid;
-    border-radius: 50%;
-
-    
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    margin: 5px;
-}
-
-#logo_name{
-    margin-top: 5px;
-    font-size: small;
-    width: fit-content;
-    height:fit-content;
-}
-
-#logo_title{
-    font-size:x-small;
-    width:fit-content;
-    height: fit-content;
-}
-
-.block2{
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    width: cover;
-    height:100vh;
-    width: 40vw;
-    float:left;
-    color: rgb(0, 0, 0);
-    display: flex;
-    justify-content: center;
-}
-
-.block3{
-    background-color: rgb(0, 0, 0);
-    color: white;
-    width: cover;
-    height:100vh;
-    display: flex;
-    justify-content: center;
-}
-
-.block4{
-    background-color: rgb(0, 0, 0);
-    color: white;
-    width: cover;
-    height:100vh;
-    display: flex;
-    justify-content: center;
-}
-
-.btn{
-    color: white;
-    position: absolute;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    text-decoration: none;
-    width: 13%;
-    height: 75vh;
-    top: 10vh;
-    outline: 5px;
-    border: 2px solid;
-    border-radius: 25px;
-    border-color: rgb(255, 255, 255);
-    background-position: center;
-    background-size: 250%;
-}
-
-.btn:hover{
-    border-color: rgb(198, 156, 102);
-}
-
-.btn_missions{
-    background-image: url(Media/Ethiopia.jpeg);
-    left: 55%;
-}
-
-
-.btn_faith{
-    background-image: url(Media/cross.jpeg); 
-    left: 69%;
-}
-
-.btn_lifestyle{
-    background-image: url(Media/car.png); 
-    left: 83%;
-}
-
-#title{
-    animation: fadeInAnimation ease 5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-
-    position: relative;
-    width: fit-content;
-    height: px;
-
-    
-    color: white;
-    font-family:Arial, Helvetica, sans-serif
-}
-
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-#title_name{
-    font-size:120px;
-}
-
-#title_location{
-    position: relative;
-    text-align: right;
-    font-size: 40px;
+#box2{
+background-color: red;
+width: 5em;
+height: 5em;
+margin: 1em;
 }
