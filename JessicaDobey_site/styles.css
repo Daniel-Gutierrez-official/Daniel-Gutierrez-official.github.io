@@ -1,5 +1,5 @@
 body, html {
-  height: 100%;
+
   font-family:cursive;
   text-align: center;
   background-color: aqua;
@@ -48,5 +48,5 @@ hr{
   }
 
   #groupPic{
-    width: 30em;
+    width: 90vw;
   }
