@@ -53,6 +53,7 @@ p{
   .button:hover{
     opacity: .7;
     box-shadow: 30px;
+    margin-bottom: 0;
   }
 
   #list{
@@ -69,4 +70,10 @@ p{
   #cashApp {
     background-color: #00D64F;
     color:black;
+  }
+
+  #harvestImg{
+    width: 11em;
+    justify-content: baseline;
+    margin: 0;
   }
