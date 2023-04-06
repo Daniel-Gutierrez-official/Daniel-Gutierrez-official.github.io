@@ -38,3 +38,23 @@ top: 5px
     border: .9px solid white;
     border-radius: 50px;
 }
+
+.button {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    font-family: Marker Felt;
+    letter-spacing: 3px;
+    color: rgb(0,0,0);
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  #donateButton{
+    
+  }
