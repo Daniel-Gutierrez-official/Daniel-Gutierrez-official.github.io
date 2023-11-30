@@ -1,0 +1,52 @@
+body, html {
+
+  font-family:cursive;
+  text-align: center;
+  background-color: aqua;
+  color:rgb(16, 46, 55);
+}
+
+h1{
+    margin: 0px;
+    font-size: 45px;
+    letter-spacing: 5px;
+}
+
+hr{
+    height: 2px;
+    background-color:rgb(16, 46, 55);
+    border: none;
+}
+
+.button {
+    border-radius: 10px;
+    letter-spacing: 3px;
+    padding:5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 10px 5px;
+    cursor: pointer;
+  }
+
+  .button:hover{
+    opacity: .7;
+    box-shadow: 30px;
+  }
+
+  #venmo {
+    border: 2px solid white;
+    background-color: #0074de;
+    color:white;
+  }
+
+  #cashApp {
+    background-color: #00D64F;
+    border: 2px solid black;
+    color:black;
+  }
+
+  #groupPic{
+    width: 90vw;
+  }

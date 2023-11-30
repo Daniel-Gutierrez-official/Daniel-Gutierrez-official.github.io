@@ -27,16 +27,16 @@ hr{
 
 body{
     background-color:rgb(108,112,85);
-    text-align: center;
+    text-align:center;
 }
 
 p{
-    color: rgb(247, 223, 177);;
+    color: rgb(247, 223, 177);
 }
 
 .button {
     background-color: rgb(154,132,77);
-    border: none;
+    border:10px;
     border-radius: 10px;
     font-family: Marker Felt;
     letter-spacing: 3px;
@@ -53,5 +53,27 @@ p{
   .button:hover{
     opacity: .7;
     box-shadow: 30px;
+    margin-bottom: 0;
+  }
 
+  #list{
+    color:rgb(247, 223, 177);
+    text-align: left;
+    margin-left: 3vw;
+  }
+
+  #venmo {
+    background-color: #0074de;
+    color:white;
+  }
+
+  #cashApp {
+    background-color: #00D64F;
+    color:black;
+  }
+
+  #harvestImg{
+    width: 11em;
+    justify-content: baseline;
+    margin: 0;
   }

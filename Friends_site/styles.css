@@ -34,16 +34,56 @@ h1{
     border:none;
     border-radius: 30px;
     padding-left: 20px;
-   }
+}
    
-   #santiImg{
-       width: 200px;
-       background-color: none;
-       border-radius: 30px;
-   }
+#santiImg{
+    width: 200px;
+    background-color: none;
+    border-radius: 30px;
+}
+
+#santiBtn:hover{
+    opacity: .9;
+    cursor: pointer;
+}
+
    
-   #santiBtn:hover{
-       opacity: .9;
-       cursor: pointer;
-   }
+#keighBtn{
+background-image: url(/HTML/Friends_site/Keigh/images/keigh.png); 
+background-color: black;
+border:none;
+border-radius: 30px;
+padding-left: 20px;
+}
    
+#keighImg{
+    width: 200px;
+    background-color: none;
+    border-radius: 30px;
+}
+   
+#keighBtn:hover{
+    opacity: .9;
+    cursor: pointer;
+}
+
+body, html {
+height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9, rgba(0, 0, 0, 0.5)), url("Page_pictures/group.png");
+
+  /* Set a specific height */
+  height: 500px;
+
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position:center top;
+  background-repeat: no-repeat;
+  background-size:cover;
+  position: fixed;
+  top: 0;
+}
