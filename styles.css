@@ -1,7 +1,7 @@
 
 
 h1{
-    color:rgb(247, 223, 177);
+    color:rgba(224, 224, 224, 0.883);
     margin: 0px;
     font-family: Marker Felt;
     font-size: 45px;
@@ -10,7 +10,7 @@ h1{
 
 hr{
     height: 2px;
-    background-color:rgb(247, 223, 177);
+    background-color:rgb(224,224,224, 0.883);
     border: none;
 }
 
@@ -26,21 +26,21 @@ hr{
 }
 
 body{
-    background-color:rgb(108,112,85);
+    background-color:rgb(27, 28, 27);
     text-align: center;
 }
 
 p{
-    color: rgb(247, 223, 177);;
+    color: rgb(224, 224, 224, 0.883);;
 }
 
 .button {
-    background-color: rgb(154,132,77);
+    background-color: rgb(224, 224, 224, 0.883);
     border: none;
     border-radius: 10px;
     font-family: Marker Felt;
     letter-spacing: 3px;
-    color: rgb(247, 223, 177);
+    color: rgb(27,28,27);
     padding: 20px 34px;
     text-align: center;
     text-decoration: none;
