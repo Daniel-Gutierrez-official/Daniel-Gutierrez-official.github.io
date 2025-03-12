@@ -66,11 +66,11 @@ function displayTime(){
             chptr = "mark", vrs = "come on now"; break;
         case 1,26:
             chptr = "mark", vrs = "yes"; break;
-        case hrs,27:
+        case 1,27:
             chptr = "john", vrs = "come on now"; break;
-        case hrs,28:
+        case 1,28:
             chptr = "mark", vrs = "yes"; break;
-        case hrs,29:
+        case 1,29:
             chptr = "Hello", vrs = "worked"; break;
         case 1,30:
             chptr = "mark", vrs = "yes"; break;
@@ -257,238 +257,238 @@ function displayTime(){
 
 
         //3 o'clock
-        case 1,0:
+        case 3,0:
             chptr = "Pray", vrs = hrs + ":00"; break;
-        case 1,1:
+        case 3,1:
             chptr = "Genesis", vrs = "In the beginning, God created the heavens and the earth."; break;
-        case 1,2:
+        case 3,2:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,3:
+        case 3,3:
             chptr = "mark", vrs = "yes"; break;
-        case 1,4:
+        case 3,4:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,5:
+        case 3,5:
             chptr = "mark", vrs = "yes"; break;
-        case 1,6:
+        case 3,6:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,7:
+        case 3,7:
             chptr = "mark", vrs = "yes"; break;
-        case 1,8:
+        case 3,8:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,9:
+        case 3,9:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,10:
+        case 3,10:
             chptr = "mark", vrs = "yes"; break;
-        case 1,11:
+        case 3,11:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,12:
+        case 3,12:
             chptr = "mark", vrs = "yes"; break;
-        case 1,13:
+        case 3,13:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,14:
+        case 3,14:
             chptr = "mark", vrs = "yes"; break;
-        case 1,15:
+        case 3,15:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,16:
+        case 3,16:
             chptr = "mark", vrs = "yes"; break;
-        case 1,17:
+        case 3,17:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,18:
+        case 3,18:
             chptr = "mark", vrs = "yes"; break;
-        case 1,19:
+        case 3,19:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,20:
+        case 3,20:
             chptr = "mark", vrs = "yes"; break;
-        case 1,21:
+        case 3,21:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,22:
+        case 3,22:
             chptr = "mark", vrs = "yes"; break;
-        case 1,23:
+        case 3,23:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,24:
+        case 3,24:
             chptr = "mark", vrs = "yes"; break;
-        case 1,25:
+        case 3,25:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,26:
+        case 3,26:
             chptr = "mark", vrs = "yes"; break;
-        case 1,27:
+        case 3,27:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,28:
+        case 3,28:
             chptr = "mark", vrs = "yes"; break;
-        case 1,29:
+        case 3,29:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,30:
+        case 3,30:
             chptr = "mark", vrs = "yes"; break;
-        case 1,31:
+        case 3,31:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,32:
+        case 3,32:
             chptr = "mark", vrs = "yes"; break;
-        case 1,33:
+        case 3,33:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,34:
+        case 3,34:
             chptr = "mark", vrs = "yes"; break;
-        case 1,35:
+        case 3,35:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,36:
+        case 3,36:
             chptr = "mark", vrs = "yes"; break;
-        case 1,37:
+        case 3,37:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,38:
+        case 3,38:
             chptr = "mark", vrs = "yes"; break;
-        case 1,39:
+        case 3,39:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,40:
+        case 3,40:
             chptr = "mark", vrs = "yes"; break;
-        case 1,41:
+        case 3,41:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,42:
+        case 3,42:
             chptr = "mark", vrs = "yes"; break;
-        case 1,43:
+        case 3,43:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,44:
+        case 3,44:
             chptr = "mark", vrs = "yes"; break;
-        case 1,45:
+        case 3,45:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,46:
+        case 3,46:
             chptr = "mark", vrs = "yes"; break;
-        case 1,47:
+        case 3,47:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,48:
+        case 3,48:
             chptr = "mark", vrs = "yes"; break;
-        case 1,49:
+        case 3,49:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,50:
+        case 3,50:
             chptr = "mark", vrs = "yes"; break;
-        case 1,51:
+        case 3,51:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,52:
+        case 3,52:
             chptr = "mark", vrs = "yes"; break;
-        case 1,53:
+        case 3,53:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,54:
+        case 3,54:
             chptr = "mark", vrs = "yes"; break;
-        case 1,55:
+        case 3,55:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,56:
+        case 3,56:
             chptr = "mark", vrs = "yes"; break;
-        case 1,57:
+        case 3,57:
             chptr = "mark", vrs = "co now"; break;
-        case 1,58:
+        case 3,58:
             chptr = "mark", vrs = "yddsf"; break;
         case 3,59:
             chptr = "mark", vrs = "come on now"; break;
 
 
         //4 o'clock
-        case 1,0:
+        case 4,0:
             chptr = "Pray", vrs = hrs + ":00"; break;
-        case 1,1:
+        case 4,1:
             chptr = "Genesis", vrs = "In the beginning, God created the heavens and the earth."; break;
-        case 1,2:
+        case 4,2:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,3:
+        case 4,3:
             chptr = "mark", vrs = "yes"; break;
-        case 1,4:
+        case 4,4:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,5:
+        case 4,5:
             chptr = "mark", vrs = "yes"; break;
-        case 1,6:
+        case 4,6:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,7:
+        case 4,7:
             chptr = "mark", vrs = "yes"; break;
-        case 1,8:
+        case 4,8:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,9:
+        case 4,9:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,10:
+        case 4,10:
             chptr = "mark", vrs = "yes"; break;
-        case 1,11:
+        case 4,11:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,12:
+        case 4,12:
             chptr = "mark", vrs = "yes"; break;
-        case 1,13:
+        case 4,13:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,14:
+        case 4,14:
             chptr = "mark", vrs = "yes"; break;
-        case 1,15:
+        case 4,15:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,16:
+        case 4,16:
             chptr = "mark", vrs = "yes"; break;
-        case 1,17:
+        case 4,17:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,18:
+        case 4,18:
             chptr = "mark", vrs = "yes"; break;
-        case 1,19:
+        case 4,19:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,20:
+        case 4,20:
             chptr = "mark", vrs = "yes"; break;
-        case 1,21:
+        case 4,21:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,22:
+        case 4,22:
             chptr = "mark", vrs = "yes"; break;
-        case 1,23:
+        case 4,23:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,24:
+        case 4,24:
             chptr = "mark", vrs = "yes"; break;
-        case 1,25:
+        case 4,25:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,26:
+        case 4,26:
             chptr = "mark", vrs = "yes"; break;
-        case 1,27:
+        case 4,27:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,28:
+        case 4,28:
             chptr = "mark", vrs = "yes"; break;
-        case 1,29:
+        case 4,29:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,30:
+        case 4,30:
             chptr = "mark", vrs = "yes"; break;
-        case 1,31:
+        case 4,31:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,32:
+        case 4,32:
             chptr = "mark", vrs = "yes"; break;
-        case 1,33:
+        case 4,33:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,34:
+        case 4,34:
             chptr = "mark", vrs = "yes"; break;
-        case 1,35:
+        case 4,35:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,36:
+        case 4,36:
             chptr = "mark", vrs = "yes"; break;
-        case 1,37:
+        case 4,37:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,38:
+        case 4,38:
             chptr = "mark", vrs = "yes"; break;
-        case 1,39:
+        case 4,39:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,40:
+        case 4,40:
             chptr = "mark", vrs = "yes"; break;
-        case 1,41:
+        case 4,41:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,42:
+        case 4,42:
             chptr = "mark", vrs = "yes"; break;
-        case 1,43:
+        case 4,43:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,44:
+        case 4,44:
             chptr = "mark", vrs = "yes"; break;
-        case 1,45:
+        case 4,45:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,46:
+        case 4,46:
             chptr = "mark", vrs = "yes"; break;
-        case 1,47:
+        case 4,47:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,48:
+        case 4,48:
             chptr = "mark", vrs = "yes"; break;
-        case 1,49:
+        case 4,49:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,50:
+        case 4,50:
             chptr = "mark", vrs = "yes"; break;
-        case 1,51:
+        case 4,51:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,52:
+        case 4,52:
             chptr = "mark", vrs = "yes"; break;
-        case 1,53:
+        case 4,53:
             chptr = "mark", vrs = "come on now"; break;
-        case 1,54:
+        case 4,54:
             chptr = "mark", vrs = "yes"; break;
         case 4,55:
             chptr = "mark", vrs = "come on now"; break;
