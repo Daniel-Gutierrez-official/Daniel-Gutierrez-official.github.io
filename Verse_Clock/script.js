@@ -10,70 +10,70 @@ function displayTime(){
     }
 
 
-    switch(hrs,min){
+    switch(hrs && min){
         //1 o'clock
         case 1,0:
             chptr = "Pray", vrs = hrs + ":00"; break;
         case 1,1:
-            chptr = "Genesis", vrs = "In the beginning, God created the heavens and the earth."; break;
+            chptr = "James", vrs = "James, a servant of God and of the Lord Jesus Christ, To the twelve tribes scattered among the nations: Greetings"; break;
         case 1,2:
-            chptr = "James", vrs = "Count it all joy, my brothers, when you meet trials of various kinds"; break;
+            chptr = "James", vrs = "Consider it pure joy, my brothers and sisters, whenver you face trials of many kinds,"; break;
         case 1,3:
-            chptr = "mark", vrs = "yes"; break;
+            chptr = "James", vrs = "because you know that the testing of your faith produces perseverance."; break;
         case 1,4:
-            chptr = "mark", vrs = "come on now"; break;
+            chptr = "James", vrs = "Let perseverance finish its work so that you may be mature and complete, not lacking anything."; break;
         case 1,5:
-            chptr = "mark", vrs = "yes"; break;
+            chptr = "James", vrs = "If any of you lacks wisdom, you should ask God, who gives generously to all without finding fault, and it will be given to you."; break;
         case 1,6:
-            chptr = "mark", vrs = "come on now"; break;
+            chptr = "James", vrs = 'But when you ask, you must believe and not doubt, because the one who doubts is like a wave of the sea, blown and tossed by the wind.'; break;
         case 1,7:
-            chptr = "mark", vrs = "yes"; break;
+            chptr = "James", vrs = 'That person should not expect to receive anything from the Lord.'; break;
         case 1,8:
-            chptr = "mark", vrs = "come on now"; break;
+            chptr = "James", vrs = "Such a person is double-minded and unstable in all they do."; break;
         case 1,9:
-            chptr = "mark", vrs = "come on now"; break;
+            chptr = "James", vrs = "Believers in humble circumstances ought to take pride in their high position."; break;
         case 1,10:
-            chptr = "mark", vrs = "yes"; break;
+            chptr = "James", vrs = "But the rich should take pride in their humiliation⏤since they will pass away like a wild flower."; break;
         case 1,11:
-            chptr = "mark", vrs = "come on now"; break;
+            chptr = "James", vrs = "For the sun rises with scorching heat and withers the plant; its blossom falls and its beauty is destroyed. In the same way, the rich will fade away even while they go about their business."; break;
         case 1,12:
-            chptr = "mark", vrs = "yes"; break;
+            chptr = "James", vrs = "Blessed is the one who perseveres under trial because, having stood the test, that person will receive the crown of life that the Lord has promised to those who love him."; break;
         case 1,13:
-            chptr = "mark", vrs = "come on now"; break;
+            chptr = "James", vrs = 'When tempted, no one should say, "God is tempting me." For God cannot be tempted by evil, nor does he tempt anyone;'; break;
         case 1,14:
-            chptr = "mark", vrs = "yes"; break;
+            chptr = "James", vrs = "but each person is tempted when they are dragged away by their own evil desire and enticed."; break;
         case 1,15:
-            chptr = "mark", vrs = "come on now"; break;
+            chptr = "James", vrs = "Then, after desire has conceived, it gives birth to sin; and sin, when it is full-grown, gives birth to death."; break;
         case 1,16:
-            chptr = "mark", vrs = "yes"; break;
+            chptr = "James", vrs = "Don't be deceived, my dear brothers and sisters."; break;
         case 1,17:
-            chptr = "mark", vrs = "come on now"; break;
+            chptr = "James", vrs = "Every good and perfect gift is from above, coming down from the Father of the heavenly lights, who does not change like shifting shadows."; break;
         case 1,18:
-            chptr = "mark", vrs = "yes"; break;
+            chptr = "James", vrs = "He chose to give us birth through the word of truth, that we might be a kind and firstfruits of all he created."; break;
         case 1,19:
-            chptr = "mark", vrs = "come on now"; break;
+            chptr = "James", vrs = ""; break;
         case 1,20:
-            chptr = "mark", vrs = "yes"; break;
+            chptr = "James", vrs = ""; break;
         case 1,21:
-            chptr = "mark", vrs = "come on now"; break;
+            chptr = "James", vrs = ""; break;
         case 1,22:
-            chptr = "mark", vrs = "yes"; break;
+            chptr = "James", vrs = ""; break;
         case 1,23:
-            chptr = "mark", vrs = "come on now"; break;
+            chptr = "James", vrs = ""; break;
         case 1,24:
-            chptr = "mark", vrs = "yes"; break;
+            chptr = "James", vrs = ""; break;
         case 1,25:
-            chptr = "mark", vrs = "come on now"; break;
+            chptr = "James", vrs = ""; break;
         case 1,26:
-            chptr = "mark", vrs = "yes"; break;
+            chptr = "James", vrs = ""; break;
         case 1,27:
-            chptr = "john", vrs = "come on now"; break;
+            chptr = "James", vrs = ""; break;
         case 1,28:
-            chptr = "mark", vrs = "yes"; break;
+            chptr = "mark", vrs = ""; break;
         case 1,29:
-            chptr = "Hello", vrs = "worked"; break;
+            chptr = "Hello", vrs = ""; break;
         case 1,30:
-            chptr = "mark", vrs = "yes"; break;
+            chptr = "mark", vrs = ""; break;
         case 1,31:
             chptr = "mark", vrs = "come on now"; break;
         case 1,32:
