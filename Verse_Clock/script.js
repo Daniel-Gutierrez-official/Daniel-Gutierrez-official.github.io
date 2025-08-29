@@ -24,7 +24,7 @@ function displayTime(){
             chptr = "James", vrs = "Let perseverance finish its work so that you may be mature and complete, not lacking anything."; break;
         case 1,5:
             chptr = "James", vrs = "If any of you lacks wisdom, you should ask God, who gives generously to all without finding fault, and it will be given to you."; break;
-        case 1,6:
+        case 1, 6:
             chptr = "James", vrs = 'But when you ask, you must believe and not doubt, because the one who doubts is like a wave of the sea, blown and tossed by the wind.'; break;
         case 1,7:
             chptr = "James", vrs = 'That person should not expect to receive anything from the Lord.'; break;
