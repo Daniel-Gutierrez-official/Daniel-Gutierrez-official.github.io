@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medical Terminology Trainer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9fafb;
+      color: #111827;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 800px;
+      width: 100%;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .tabs {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 20px 0;
+    }
+    .tab {
+      padding: 10px 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: #fff;
+      cursor: pointer;
+    }
+    .tab.active {
+      background: #111827;
+      color: #fff;
+    }
+    .card, .quiz, .review {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    .flashcard {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      border: 2px dashed #ccc;
+      border-radius: 12px;
+      cursor: pointer;
+      font-size: 1.5em;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .btn-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    button {
+      padding: 10px 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+      background: #f3f4f6;
+    }
+    button.primary {
+      background: #111827;
+      color: #fff;
+      border-color: #111827;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin: 5px 0;
+      padding: 6px 10px;
+      border-radius: 6px;
+    }
+    li.mastered {
+      background-color: #d1fae5;
+      color: #065f46;
+    }
+    li.tough {
+      background-color: #fee2e2;
+      color: #991b1b;
+    }
+    .feedback {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    .correct {
+      color: green;
+    }
+    .incorrect {
+      color: red;
+    }
+    .reset-btn {
+      margin-top: 15px;
+      padding: 10px 15px;
+      border-radius: 8px;
+      border: 1px solid #991b1b;
+      background: #fee2e2;
+      color: #991b1b;
+      cursor: pointer;
+    }
+    .reset-btn:hover {
+      background: #fca5a5;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Quiz 2</h1>
+    <div class="tabs">
+      <div class="tab active" data-tab="flash">Flashcards</div>
+      <div class="tab" data-tab="quiz">Quiz</div>
+      <div class="tab" data-tab="review">Review</div>
+    </div>
+
+    <div id="flash" class="card">
+      <div id="flashcard" class="flashcard">Click to see definition</div>
+      <div class="btn-row">
+        <button id="wrongBtn">Still Learning</button>
+        <button id="rightBtn" class="primary">I Knew It</button>
+      </div>
+    </div>
+
+    <div id="quiz" class="quiz" style="display:none">
+      <p id="question"></p>
+      <div id="options"></div>
+      <div id="feedback" class="feedback"></div>
+      <button id="nextBtn">Next</button>
+    </div>
+
+    <div id="review" class="review" style="display:none">
+      <h3>Review Progress</h3>
+      <p><strong>Mastered:</strong> <span id="masteredCount">0</span> | <strong>Needs Work:</strong> <span id="toughCount">0</span></p>
+      <h4>Mastered Terms</h4>
+      <ul id="masteredList"></ul>
+      <h4>Needs Work</h4>
+      <ul id="toughList"></ul>
+      <button id="resetBtn" class="reset-btn">Reset Progress</button>
+    </div>
+  </div>
+
+  <script>
+    const terms = [
+      { term: "A, an-", definition: "Not, without" },
+      { term: "ab-", definition: "Off, from" },
+      { term: "ante-", definition: "Preceding, opposite" },
+      { term: "ant-, anti-", definition: "Against, opposite" },
+      { term: "arthro-", definition: "Joint" },
+      { term: "aut-, auto-", definition: "Self" },
+      { term: "cardi-, cardio-", definition: "Heart" },
+      { term: "chondro-", definition: "Cartilage" },
+      { term: "cerebr-", definition: "Brain" },
+      { term: "co-, con-", definition: "With, together" },
+      { term: "contra-", definition: "Against" },
+      { term: "dia-", definition: "Across" },
+      { term: "dys-", definition: "Difficulty, faulty" },
+      { term: "en-, em-", definition: "Into, in" },
+      { term: "endo-", definition: "Within" },
+      { term: "exo-", definition: "Outside" },
+      { term: "epi-", definition: "Over" },
+      { term: "extra-", definition: "Outside, beyond" },
+      { term: "foram-", definition: "Opening" },
+      { term: "hema-, hemo-", definition: "Blood" },
+      { term: "hemi-", definition: "Half" },
+      { term: "hist-", definition: "Tissue" },
+      { term: "hyper-", definition: "Excessive" },
+      { term: "hypo-", definition: "Under, below" },
+      { term: "im-", definition: "Not" },
+      { term: "inter-", definition: "Between" },
+      { term: "infra-", definition: "Below" },
+      { term: "intra-", definition: "Within" },
+      { term: "ipsi-", definition: "Same" },
+      { term: "iso-", definition: "Equal" },
+      { term: "macro-", definition: "Large" },
+      { term: "mal-", definition: "Bad, abnormal" },
+      { term: "micro-", definition: "Small" },
+      { term: "myo-", definition: "Muscle" },
+      { term: "nephro-", definition: "Kidney" },
+      { term: "neuro-", definition: "Nerve" },
+      { term: "osteo-", definition: "Bone" },
+      { term: "para-", definition: "Beside" },
+      { term: "peri-", definition: "Around" },
+      { term: "poly-", definition: "Many, multiple" },
+      { term: "pseudo-", definition: "False" },
+      { term: "quad-", definition: "Four" },
+      { term: "semi-", definition: "Half" },
+      { term: "sub-", definition: "Below, under" },
+      { term: "super-", definition: "Above, over" },
+      { term: "tachy-", definition: "Rapid" },
+      { term: "trans-", definition: "Across" },
+      { term: "tuber-", definition: "Swelling" },
+      { term: "-algia", definition: "Pain" },
+      { term: "-ary", definition: "Associated with" },
+      { term: "-ectomy", definition: "Cut out" },
+      { term: "-ia", definition: "Condition" },
+      { term: "-itis", definition: "Inflammation" },
+      { term: "-logy", definition: "Study of" },
+      { term: "-lysis", definition: "Loosening/breakdown" },
+      { term: "-malacia", definition: "Soft" },
+      { term: "-oma", definition: "Tumor" },
+      { term: "-ory", definition: "Referring to" },
+      { term: "-pathy", definition: "Disease" },
+      { term: "-phil, -philo", definition: "Like, love" },
+      { term: "-phobia", definition: "Fear" },
+      { term: "-plasty", definition: "Growth, molding" },
+      { term: "-plegia", definition: "Paralysis" },
+      { term: "-stasis", definition: "Standing, arrest" },
+      { term: "-stomy", definition: "An opening" },
+      { term: "-tomy", definition: "To cut" },
+      { term: "-ty", definition: "Condition of" }
+    ];
+
+    let index = 0;
+    let flipped = false;
+    let progress = {};
+
+    const flashcardEl = document.getElementById("flashcard");
+    const wrongBtn = document.getElementById("wrongBtn");
+    const rightBtn = document.getElementById("rightBtn");
+
+    function showFlashcard() {
+      flipped = false;
+      flashcardEl.textContent = terms[index].term;
+    }
+
+    flashcardEl.addEventListener("click", () => {
+      flipped = !flipped;
+      flashcardEl.textContent = flipped ? terms[index].definition : terms[index].term;
+    });
+
+    function mark(correct) {
+      const key = terms[index].term;
+      if (!progress[key]) progress[key] = { seen: 0, correct: 0 };
+      progress[key].seen++;
+      if (correct) progress[key].correct++;
+      index = (index + 1) % terms.length;
+      showFlashcard();
+    }
+
+    wrongBtn.addEventListener("click", () => mark(false));
+    rightBtn.addEventListener("click", () => mark(true));
+
+    // Quiz logic
+    let qIndex = 0;
+    const questionEl = document.getElementById("question");
+    const optionsEl = document.getElementById("options");
+    const nextBtn = document.getElementById("nextBtn");
+    const feedbackEl = document.getElementById("feedback");
+
+    function showQuestion() {
+      const current = terms[qIndex % terms.length];
+      questionEl.textContent = `What is the definition of ${current.term}?`;
+      const choices = shuffle([current, ...getDistractors(current)]);
+      optionsEl.innerHTML = "";
+      feedbackEl.textContent = "";
+      choices.forEach((c) => {
+        const btn = document.createElement("button");
+        btn.textContent = c.definition;
+        btn.onclick = () => checkAnswer(c, current, btn);
+        optionsEl.appendChild(btn);
+      });
+    }
+
+    function checkAnswer(choice, correct, btn) {
+      if (!progress[correct.term]) progress[correct.term] = { seen: 0, correct: 0 };
+      progress[correct.term].seen++;
+      if (choice.term === correct.term) {
+        progress[correct.term].correct++;
+        feedbackEl.textContent = "Correct!";
+        feedbackEl.className = "feedback correct";
+        btn.style.backgroundColor = "#d1fae5";
+      } else {
+        feedbackEl.textContent = `Incorrect. Correct answer: ${correct.definition}`;
+        feedbackEl.className = "feedback incorrect";
+        btn.style.backgroundColor = "#fee2e2";
+      }
+      Array.from(optionsEl.children).forEach(b => b.disabled = true);
+    }
+
+    function getDistractors(correct) {
+      const arr = terms.filter(t => t.term !== correct.term);
+      return shuffle(arr).slice(0, 3);
+    }
+
+    function shuffle(arr) {
+      return arr.sort(() => Math.random() - 0.5);
+    }
+
+    nextBtn.addEventListener("click", () => {
+      qIndex++;
+      showQuestion();
+    });
+
+    // Tabs
+    document.querySelectorAll(".tab").forEach(tab => {
+      tab.addEventListener("click", () => {
+        document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+        tab.classList.add("active");
+        document.querySelectorAll(".card, .quiz, .review").forEach(sec => sec.style.display="none");
+        document.getElementById(tab.dataset.tab).style.display = "block";
+        if(tab.dataset.tab === "quiz") showQuestion();
+        if(tab.dataset.tab === "review") showReview();
+      });
+    });
+
+    function showReview() {
+      const masteredList = document.getElementById("masteredList");
+      const toughList = document.getElementById("toughList");
+      const masteredCountEl = document.getElementById("masteredCount");
+      const toughCountEl = document.getElementById("toughCount");
+      masteredList.innerHTML = "";
+      toughList.innerHTML = "";
+      let masteredCount = 0;
+      let toughCount = 0;
+      for (let key in progress) {
+        const p = progress[key];
+        if (p.correct >= 3) {
+          const li = document.createElement("li");
+          li.textContent = `${key} (${p.correct}/${p.seen})`;
+          li.classList.add("mastered");
+          masteredList.appendChild(li);
+          masteredCount++;
+        } else if (p.seen >= 2 && p.correct/p.seen < 0.6) {
+          const li = document.createElement("li");
+          li.textContent = `${key} (${p.correct}/${p.seen})`;
+          li.classList.add("tough");
+          toughList.appendChild(li);
+          toughCount++;
+        }
+      }
+      masteredCountEl.textContent = masteredCount;
+      toughCountEl.textContent = toughCount;
+    }
+
+    // Reset progress
+    const resetBtn = document.getElementById("resetBtn");
+    resetBtn.addEventListener("click", () => {
+      if(confirm("Are you sure you want to reset all progress?")){
+        progress = {};
+        showReview();
+        alert("Progress has been reset.");
+      }
+    });
+
+    // Initialize
+    showFlashcard();
+  </script>
+</body>
+</html>
