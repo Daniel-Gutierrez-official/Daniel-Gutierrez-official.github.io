@@ -1,0 +1,39 @@
+
+
+h1{
+    color:rgba(224, 224, 224, 0.883);
+    margin: 0px;
+    font-family: Marker Felt;
+    font-size: 45px;
+    letter-spacing: 5px;
+}
+
+h2{
+    color:rgba(224, 224, 224, 0.883);
+    margin: 0px;
+    font-family: Marker Felt;
+    font-size: 15px;
+    letter-spacing: 5px;
+}
+
+
+
+hr{
+    height: 2px;
+    background-color:rgb(224,224,224, 0.883);
+    border: none;
+}
+
+@font-face {
+    font-family: Marker Felt;
+    src: url(//fonts.googleapis.com/css?family=Permanent+Marker);
+}
+
+body{
+    background-color:rgb(27, 28, 27);
+    text-align: center;
+}
+
+p{
+    color: rgb(224, 224, 224, 0.883);;
+}
